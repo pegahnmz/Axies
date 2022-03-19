@@ -1,0 +1,50 @@
+.cs{
+     display: grid;
+     grid-template-columns: 22% 22% 22% 22%;
+     text-align: center;
+     justify-content: center;
+     column-gap: 1.5rem;
+     
+}
+
+.cs-icon{
+   font-size: 1.3rem;
+    padding: 0.5rem 0.9rem;
+    
+    border-radius: 0.5rem;
+    
+    
+}
+.cs-div-icon{
+    transition: transform 0.5s;
+    margin-bottom: 1rem;
+}
+
+
+
+.cs p{
+    
+    font-size: 0.8rem;
+    color: #ADADB0;
+
+    
+}
+.cs h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+    transition: all 0.3s ease-in-out;
+}
+.cs-column{
+     display: grid;
+     row-gap: 1.5rem;
+     
+}
+.cs-column:hover > .cs-div-icon{
+    transform: rotateY(360deg);
+    
+}
+.cs h2:hover{
+    color: #5142FB;
+    cursor: pointer;
+}

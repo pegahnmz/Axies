@@ -1,0 +1,146 @@
+.hero{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-h{
+    font-size: 54px;
+    line-height: 68px;
+}
+.hero-p{
+    font-size: 19px;
+    line-height: 42px;
+    margin: 20px 0;
+}
+.btn-group{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-left--blob{
+   position: relative;
+   animation: up-down 5s infinite;
+   
+}
+.hero-left--imgslider{
+    position: absolute;
+    right: 13rem;
+    top: 5rem;
+    animation: up-down2 5s infinite;
+    
+}
+@keyframes up-down{
+    0%{
+         top: 0;
+    }
+    50%{
+        top: 1rem;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes up-down2{
+    0%{
+         top: 5rem;
+    }
+    50%{
+        top: 6rem;
+    }
+    100%{
+        top: 5rem;
+    }
+}
+.hero-right--p{
+    background: linear-gradient(90deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgb(20, 20, 38);
+    -webkit-text-stroke-width: 0.3rem;
+    -webkit-text-stroke-color:transparent ;
+}
+
+
+
+/*///////////////////////*/
+
+  
+.circle01 {
+
+    position: absolute;
+    background-color: transparent ;
+    border: 0.1rem solid rgb(149, 109, 187);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    top: 5rem;
+    right: 17rem;
+    animation: circle-animation 8s ease-in-out infinite;
+    z-index: -1;
+}
+.circle02 {
+    position: absolute;
+    background-color: transparent ;
+    border: 0.1rem solid rgb(149, 109, 187);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    top: 18rem;
+    right: 45rem;
+    animation: circle-animation 8s ease-in-out infinite;
+}
+.circle1{
+    background: linear-gradient(90deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
+    position: absolute;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    top: 15rem;
+    right: 14rem;
+    
+    animation: circle-animation 8s ease-in-out infinite;
+    z-index: -1;
+}
+
+.circle3 {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 35rem;
+    right: 15rem;
+    animation: circle-animation 8s ease-in-out infinite;
+}
+.circle4 {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    top: 35rem;
+    right: 45rem;
+    animation: circle-animation 8s ease-in-out infinite;
+}
+.circle5 {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    top: 40rem;
+    right: 60rem;
+    animation: circle-animation 8s ease-in-out infinite;
+}
+
+@keyframes circle-animation {
+    0% {
+        transform: translateX(3rem);
+    }
+    50% {
+        transform: translateX(-3rem);
+    }
+    100%{
+        transform: translateX(3rem);
+    }
+}

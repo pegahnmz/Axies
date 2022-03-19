@@ -1,0 +1,166 @@
+.tp-btn{
+     
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    padding: 0.8rem 1.3rem;
+    border-radius: 1.5rem;
+    border: 0.07rem solid rgb(136, 136, 136);
+    transition: all 0.2s ease-in-out;
+}
+.tp-btn:hover{
+    border-color: rgb(81, 66, 251);
+    box-shadow: 0px 0px 4px 0px rgb(81, 66, 251);
+    cursor: pointer;
+    transform :scale(1.01)
+}
+.tp-btn:active{
+    transform: scale(1);
+    
+}
+.tp-button-gp{
+    position: relative;
+    margin-bottom: 40px;
+     
+}
+.tp-button-gp button{
+    margin-right: 10px;
+}
+.tp-btn-left{
+    position: absolute;
+    right: 0;
+}
+.tp-box-img{
+    position: relative;
+   margin-bottom: 20px;
+}
+.tp-box-img--inner{
+    border-radius: 20px;
+    
+    box-shadow: 1px 1px 10px 0px rgb(128, 128, 128);
+}
+.tp-box-top{
+    display: flex;
+}
+.tp-liked{
+    
+    position: absolute;
+    background-color:#14141fa8;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    top: 10px;
+    right: 10px;
+}
+.bi-heart::before{
+    font-size: 0.84rem;
+}
+.tp-box-name{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+.btn-bsc{
+    position: absolute;
+    background-color: blue;
+   border-radius: 10px;
+   padding: 4px 10px ;
+   right: 0;
+}
+.tp-box-profile{
+    position: relative;
+    margin-bottom: 20px;
+}
+.tp-profile-left{
+    position: absolute;
+    right: 0;
+}
+
+
+.tp-profile-p{
+    margin-top: 10px;
+}
+.tp-footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.tp-footer p{
+    position: absolute;
+    right: 0;
+}
+.tp-box{
+    width: fit-content;
+    height: fit-content;
+    top: auto;
+    transition:all 0.3s ease ;
+    
+    
+}
+.tp-header-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}
+.tp-box:hover{
+    cursor: pointer;
+     
+    transform: translateY(-15px);
+}
+.tp-footer-btn{
+    background-color: transparent;
+    border: 0px solid snow;
+    box-shadow: 0px 0px 4px 0px snow;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.tp-footer-btn:hover{
+    cursor: pointer;
+    border-color: rgb(81, 66, 251);
+    box-shadow: 0px 0px 4px 0px rgb(81, 66, 251);
+    transform :scale(1.01)
+}
+
+.tp-box-top{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.tp-losdmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+.load-more{
+    background-color: transparent;
+    border: 1px solid snow;
+    box-shadow: 0px 0px 4px 0px snow;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.load-more:hover{
+    cursor: pointer;
+    border-color: rgb(81, 66, 251);
+    box-shadow: 0px 0px 4px 0px rgb(81, 66, 251);
+    transform :scale(1.01)
+}
+.comming-soon{
+    position: absolute;
+    background-color: rgb(255, 208, 0);
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.tp-view-history{
+    font-size: 1rem ;
+}

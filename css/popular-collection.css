@@ -1,0 +1,144 @@
+.pc{
+    padding: 0 2rem;
+}
+.pc-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.pc-header p{
+    
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(-90deg, rgb(248, 55, 255) 0%, rgb(200, 2, 207) 20%, rgb(42, 31, 255) 100%) 10;
+    
+    display: flex;
+    align-items: flex-end;
+    
+    line-height: 2rem;
+    
+    
+}
+@keyframes shine{
+    to{
+        background-position: 200% center;
+    }
+}
+.pc-header p:hover{
+    cursor: pointer;
+    background: linear-gradient(-90deg, rgb(248, 55, 255) , rgb(200, 2, 207) , rgb(42, 31, 255),rgb(200, 2, 207),rgb(248, 55, 255)) ;
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% auto;
+    animation: shine 2s linear infinite;
+}
+.pc-header h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.pc-box{
+    background-color: #343444;
+    padding: 20px;
+    
+    border-radius: 30px;
+    position: relative;
+}
+.pc-header-img{
+    width: 63px;
+    height: 63px;
+    border-radius: 20px;
+}
+
+.pc-box--header{
+    display: flex;
+    align-items: center;
+
+}
+.pc-header-title{
+    margin-left: 15px;
+}
+.pc-title-p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.pc-box-creator,.pc-box-span
+{
+    font-size: 14px;
+    font-weight: 500;
+}
+.pc-box-span{
+    color: rgb(173, 173, 173);
+}
+.pc-box-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+.pc-box-main{
+    display: flex;
+    
+}
+.pc-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.pc-header-like{
+    background-color:#14141F;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pc-header-like--clicked{
+    color: red !important;
+}
+.box-main-img{
+   border-radius: 10px;
+   cursor: pointer;
+}
+.box-main-img:hover{
+    transform :scale(1.01);
+    box-shadow: 1px 1px 5px 0px rgb(29, 29, 29);
+    
+}
+.box-main-left{
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.main-left-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-left-bottom{
+    bottom: 0;
+}
+
+.pc-box-creator:hover,.pc-title-p:hover{
+    color: rgb(59, 59, 250);
+    cursor: pointer;
+}
+.pc-box-creator{
+    transition: all 0.3s ease-in-out;
+}
+.header-imag-gp{
+    position: relative;
+}
+.header-imag-gp a{
+    background-color: blue;
+    padding: 0px 2px;
+    font-weight: 400;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
