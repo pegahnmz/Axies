@@ -1,22 +1,27 @@
-#header{
+.header-container{
     position: fixed;
     width: 100%;
     top: 0;
     transition: 1s;
     z-index: 100;
-    background-color: var(--dark-bg);
+    background-color: transparent;
     display: flex;
     align-content: center;
     text-align: center;
+    gap: 0.5rem;
     justify-content: center;
     padding: 0.6rem 0rem;
     border-bottom: 0.1rem solid rgb(63, 63, 72);
+    margin-top: 0.2rem;
     
 }
 
 .sticky{
     border: none !important;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.527)
+    box-shadow: 5px 5px 10px 0px rgba(8, 8, 8, 0.793);
+    background-color: var(--dark-bg) !important;
+    width: fit-content !important;
+    border-radius: 1rem;
 }
 header *{
     margin:0 0.8rem;
@@ -26,10 +31,11 @@ header *{
     display: flex;
     justify-content: space-around;
     align-items: center;
+   gap: 0.4rem;
     
 }
 .nav-link{
-    
+    position: relative;
     transition: all ease-in-out 0.4s;
     transform: scale(1);
     
@@ -42,6 +48,21 @@ header *{
     -webkit-text-stroke-color: transparent;
     
     
+}
+.nav-link:hover .navbar-arrow{
+    transform: rotate(225deg);
+}
+.navbar-arrow{
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 37%;
+    left: 2.8rem;
+    border: 1px solid ;
+    border-width: 0 1px 1px 0;
+    
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
 }
 .nav-item{
     position: relative;
@@ -199,6 +220,10 @@ header *{
 .logo-icon{
     height: 2.1rem;
     
+}
+.logo{
+    display: flex;
+    gap: 0 !important;
 }
 .logo :hover{
     cursor: pointer;

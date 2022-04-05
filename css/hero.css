@@ -20,7 +20,7 @@
 }
 .hero-left--blob{
    position: relative;
-   animation: up-down 5s infinite;
+   /*animation: up-down 5s infinite;*/
    
 }
 .hero-left--imgslider{
