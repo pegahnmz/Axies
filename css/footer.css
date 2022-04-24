@@ -1,11 +1,9 @@
 
 .footer-container{
     background-color: #0D0D12;
-   
     display: flex;
     justify-content:space-between;
     padding: 5rem 4rem;
-   
 }
 .column1 p{
     margin-top: 15px;
