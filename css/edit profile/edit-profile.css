@@ -114,7 +114,7 @@
     background-color: rgb(140, 0, 255);
   /*  box-shadow: 1px 1px 8px 0px rgb(140, 0, 255); */
     padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     font-size: 1rem;
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -150,7 +150,7 @@
 .div-btn{
     background-color: rgb(140, 0, 255);
     width: fit-content;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .div-btn:hover{
     background-color: rgba(140, 0, 255, 0.738);
@@ -189,4 +189,38 @@
     width: inherit;
     height: inherit;
     border-radius: inherit;
+}
+
+.EP-btn{
+    background-color: transparent;
+    padding: 0.7rem 2rem;
+    border: 2px solid snow;
+     font-size: 0.9rem;
+     font-weight: 600;
+    border-radius: 2rem;
+    background-size: 400% 300%;
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(to right,
+    transparent, 
+     transparent, 
+     
+     rgba(140, 0, 255, 0.688),
+     rgba(150, 23, 196, 0.347));
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.EP-btn:hover{
+    cursor: pointer;
+    background-position: 100% 0%;
+    transition: all 0.3s ease-in-out;
+    border-color: rgba(150, 23, 196, 0.229);
+   /* 
+    border-image:linear-gradient( rgb(140, 0, 255) ,rgb(187, 0, 255)),
+     linear-gradient(90deg, rgb(140, 0, 255) ,rgb(187, 0, 255));
+*/
+
+/*
+    background: linear-gradient(90deg, rgb(140, 0, 255) ,rgb(187, 0, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% auto;*/
 }
