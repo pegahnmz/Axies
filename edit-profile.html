@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://kit.fontawesome.com/2ce738c39a.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -114,7 +116,13 @@
             
             <div class="header-items">
                 <a id="nav-search" class="search-icon nav-link " href="#"><i class="bi-search search-icon"></i></a>
-                <button class="wallet-icon btn"><i class="bi-wallet "></i> Wallet connect</button>
+                <div class="EP-icon notif-header">
+                    <a class="bi-bell notif"></a>
+                    <div>4</div>
+                </div>
+                <div class="EP-icon">
+                    <img src="./images/04_Top Seller/avt-7.jpg" alt="#" class="header-profile">
+                </div>
             </div>
                 
             <div class="header-items">
@@ -136,48 +144,82 @@
     </div>
 
     <main>
-        <div class="edit-profile--main">
-            <div class="img-box grid-item">
-                <img src="./images/04_Top Seller/avt-3.jpg" alt="" class="img-box--img">
-                <button class="load-more">Upload New Photo</button>
-                <button class="load-more">Delete</button>
-            </div>
-            <h3 class="grid-item">Choice your cover image</h3>
-            <div class="img-cover grid-item">
-                <button class="load-more"> Upload file</button>
-            </div>
-            <div class="img-cover img-cover--img grid-item">
-                <img src="./images/item-details/bg.jpg" alt="">
-            </div>
-            <div class="img-cover img-cover--img grid-item">
-                <img src="./images/item-details/bg.jpg" alt="">
-            </div>
-            <h3 class="grid-item">Acount info</h3>
-            <h3 class="grid-item">Your Social media</h3>
-            <form action="" class="grid-item">
-                <label for="EP_name">Display name</label>
-                <input type="text" id="EP_name" placeholder="trisa franc">
-                <label for="EP_url">Custom URL</label>
-                <input type="text" id="EP_url" placeholder="Axies.trisafrancs.com">
-                <label for="EP_email">Email</label>
-                <input type="text" id="EP_email" placeholder="Enter your email">
-                <label for="EP_bio">Bio</label>
-                <textarea name="EP_bio" id="EP_bio" cols="30" rows="10"></textarea>
-                <button class="load-more">Update Profile</button>
-            </form>
-            <div class="grid-item">
-                <label for="EP_facebook">Facebook</label>
-                <input type="text" id="EP_facebook" placeholder="Facebook Username">
-                <button class="btn">Connect to facebook</button>
-                <label for="EP_twitter">Twitter</label>
-                <input type="text" id="EP_twitter" placeholder="Twitter Username">
-                <button class="btn">Connect to twitter</button>
-                <label for="EP_discord">Discord</label>
-                <input type="text" id="EP_discord" placeholder="Discord Username">
-                <button class="btn">Connect to discord</button>
+        
+        <section class="EP">
+            <div class="edit-profile--main">
+                <div class="EP-main--left">
+                    <div class="img-box grid-item">
+                        <img src="./images/04_Top Seller/avt-3.jpg" alt="" class="img-box--img" id="EP_img">
+                        <input type="file" id="upload_file" hidden>
+                        <button class="load-more" id="upload_EP">Upload New Photo</button>
+                        <button class="load-more" id="delete_EP">Delete</button>
+                    </div>
+                </div>
+                <div class="EP-main--right">
+                    
+                    <div class="img-cover--grp grid-item">
+                        <h3>Choice your cover image</h3>
+                        <div class="img-cover">
+                            <button class="load-more"> Upload file</button>
+                        </div>
+                        <div class="img-cover img-cover--img">
+                            <img src="./images/item-details/bg.jpg" alt="">
+                        </div>
+                        <div class="img-cover img-cover--img">
+                            <img src="./images/item-details/bg.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-item EP-col">
+                        <h3>Acount info</h3>
+                        <div class="input-gp">
+                            <label for="EP_name">Display name</label>
+                            <input type="text" id="EP_name" placeholder="trisa franc">
+                        </div>
+                        <div class="input-gp">
+                            <label for="EP_url">Custom URL</label>
+                            <input type="text" id="EP_url" placeholder="Axies.trisafrancs.com">
+                        </div>
+                        <div class="input-gp">
+                            <label for="EP_email">Email</label>
+                            <input type="text" id="EP_email" placeholder="Enter your email">
+                        </div>
+                        <div class="input-gp">
+                            <label for="EP_bio">Bio</label>
+                            <textarea name="EP_bio" id="EP_bio" cols="30" rows="5"></textarea>
+                        </div>
+                        <button class="load-more">Update Profile</button>
+                    </div>
+                    <div class="grid-item EP-col">
+                        <h3>Your Social media</h3>
+                        <div class="input-gp">
+                            <label for="EP_facebook">Facebook</label>
+                            <input type="text" id="EP_facebook" placeholder="Facebook Username">
+                            <div class="div-btn">
+                                <button><a class="bi-facebook"></a>&nbsp; Connect to facebook</button>
+                            </div>
+                            
+                        </div>
+                        <div class="input-gp">
+                            <label for="EP_twitter">Twitter</label>
+                            <input type="text" id="EP_twitter" placeholder="Twitter Username">
+                            <div class="div-btn">
+                                <button><a class="bi-twitter"></a>&nbsp; Connect to twitter</button>
+                            </div>
+                            
+                        </div>
+                        <div class="input-gp">
+                            <label for="EP_discord">Discord</label>
+                            <input type="text" id="EP_discord" placeholder="Discord Username">
+                            <div class="div-btn">
+                                <button><a class="bi-discord"></a>&nbsp; Connect to discord</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
 
             </div>
-        </div>
+        </section>
+        
     </main>
 
     <footer>
@@ -227,6 +269,8 @@
         </div>
        
     </footer>
+
     
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

@@ -78,7 +78,27 @@ var swiper = new Swiper('.swiper', {
       swiper.autoplay.stop()
   })
 
+// Edit profile page
 
+let upload_file = document.querySelector("#upload_file");
+const upload_EP = document.querySelector("#upload_EP");
+const delete_EP = document.querySelector("#delete_EP");
+const EP_img = document.querySelector("#EP_img");
+
+
+
+
+
+upload_EP.addEventListener("click",function(){
+    alert("ko");
+    document.getElementById('upload_file').click(); 
+})
+
+/*
+function activeit() {
+    document.getElementById('upload_file').click(); 
+      
+  }
   
-
+*/
  
