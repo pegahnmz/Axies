@@ -1,6 +1,9 @@
 :root{
     --dark-bg:rgb(20, 20, 38);
     --primary-blue:rgb(81, 66, 251);
+
+    /* gradients*/
+    --main-text-gradient :linear-gradient(180deg, rgba(190,80,230,1) 0%, rgba(153,80,230,1) 50%, rgba(88,80,230,1) 100%);
 }
 
 *,
