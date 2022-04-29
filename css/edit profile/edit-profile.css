@@ -15,7 +15,24 @@
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
+    z-index: 0;
+    position: relative;
+    
 }
+.img-over{
+    background-color: rgba(0, 0, 0, 0.495);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 600;
+    top: 0;
+}
+.img-over-hidden{
+    opacity: 0.5;
+}
+
 .img-cover{
    /* box-shadow: 0px 1px 5px 0px rgba(105, 105, 105, 0.621);*/
     width: 20rem;
@@ -223,4 +240,32 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-size: 200% auto;*/
+}
+
+.swal-modal{
+    background-color: #343444d5;
+}
+.swal-text{
+    color: snow;
+}
+.swal-button{
+    background-color: transparent;
+    color: snow;
+}
+.swal-button:hover{
+    color: #343444;
+    background-color: rgba(255, 250, 250, 0.936) !important;
+}
+.swal-footer{
+    text-align: center;
+}
+.swal-button--danger{
+    background-color: red;
+}
+.swal-button--danger:hover{
+    background-color: rgba(255, 0, 0, 0.805) !important;
+}
+.swal-icon--success__hide-corners, .swal-icon--success__ring,
+.swal-icon--success:after, .swal-icon--success:before{
+    background-color: transparent;
 }
