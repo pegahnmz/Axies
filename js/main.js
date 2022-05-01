@@ -29,7 +29,7 @@ nav_search.addEventListener("click", function () {
 window.addEventListener("scroll", function(){
     
     header.classList.toggle("sticky", window.scrollY > 0)
-    header.classList.toggle("header-onscroll", window.scrollY > 0)
+  //  header.classList.toggle("header-onscroll", window.scrollY > 0)
 })
 
  
