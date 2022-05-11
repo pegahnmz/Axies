@@ -84,8 +84,10 @@
     
 }
 .pc-inner{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,28rem);
+    gap: 1rem;
+     justify-content: space-around;
 }
 .pc-header-like{
     background-color:#14141F;

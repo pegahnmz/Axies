@@ -53,7 +53,7 @@ var swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     effect:"slide",
     autoplay:{
         delay:3000,
@@ -74,6 +74,13 @@ var swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+   /* breakpoints: {
+        1640: {
+            slidesPerView: 1,
+        }},
+*/
+
   on:{
       init(){
           this.el.addEventListener("mouseenter", () =>{

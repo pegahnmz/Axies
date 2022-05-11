@@ -39,8 +39,12 @@
     
     box-shadow: 1px 1px 10px 0px rgb(128, 128, 128);
 }
-.tp-box-top{
-    display: flex;
+.tp-box-tp{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,20rem);
+    justify-content: space-around;
+    gap: 2rem;
+    
 }
 .tp-liked{
     

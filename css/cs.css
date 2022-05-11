@@ -1,9 +1,10 @@
 .cs{
      display: grid;
-     grid-template-columns: 22% 22% 22% 22%;
+     grid-template-columns: repeat(auto-fill,19rem);
      text-align: center;
      justify-content: center;
-     column-gap: 1.5rem;
+     column-gap: 2rem;
+     row-gap: 3rem;
      
 }
 
@@ -37,7 +38,7 @@
 }
 .cs-column{
      display: grid;
-     row-gap: 1.5rem;
+     row-gap: 0.8rem;
      
 }
 .cs-column:hover > .cs-div-icon{
