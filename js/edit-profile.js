@@ -1,10 +1,4 @@
 // Edit profile page
-const header = this.document.getElementById("header")
-window.addEventListener("scroll", function(){
-    
-    header.classList.toggle("sticky", window.scrollY > 0)
-   // header.classList.toggle("header-onscroll", window.scrollY > 0)
-})
 
 const upload_file = document.querySelector("#upload_file");
 const upload_EP = document.querySelector("#upload_EP");
@@ -81,45 +75,3 @@ EP_img.addEventListener("dragleave", (ev)=>{
     EP_img.classList.remove("img-over-hidden");
 })
 
-
-/// header search
-const nav_search = document.getElementById("nav-search");
-const nav_item = document.getElementsByClassName("nav-item");
-const search_input = document.getElementById("search_input");
-const search_close_btn = document.querySelector("#search-close-btn");
-
-               
-nav_search.addEventListener("click", function () {
-    for(let i = 0; i < nav_item.length; i++){
-        nav_item[i].classList.remove("nav-show-item")
-        nav_item[i].classList.add("nav-hide-item")
-        
-        
-    }
-       search_input.classList.remove("hide")
-        search_input.classList.add("show")
-        nav_search.classList.remove("text-gradient-hover")
-        search_close_btn.classList.remove("hide")  
-        search_close_btn.classList.add("show-close-btn")
-        search_input.value="";
-  }, false)
-
-  document.addEventListener('click', function(event){
-      const header = document.getElementById("header");
-      const isclickedinside = header.contains(event.target);
-      const isclickedonclosebtn = search_close_btn.contains(event.target);
-
-      if((!isclickedinside )||(isclickedonclosebtn)){
-          for(let i = 0; i < nav_item.length; i++){
-              nav_item[i].classList.remove("nav-hide-item")
-              nav_item[i].classList.add("nav-show-item")
-          }
-           nav_search.classList.remove("nav-hide-item")
-           search_input.classList.add("hide")
-            search_input.classList.remove("show")
-            
-            nav_search.classList.add("text-gradient-hover")
-          search_close_btn.classList.remove("show-close-btn")
-          search_close_btn.classList.add("hide")
-      }
-  })

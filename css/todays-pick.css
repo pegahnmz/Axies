@@ -50,12 +50,16 @@
     
     position: absolute;
     background-color:#14141fa8;
+    color: snow !important;
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
     
     top: 10px;
     right: 10px;
+}
+.tp-liked > i::before{
+    color: snow !important;
 }
 .bi-heart::before{
     font-size: 0.84rem;
@@ -68,6 +72,7 @@
 .btn-bsc{
     position: absolute;
     background-color: blue;
+    color: snow !important;
    border-radius: 10px;
    padding: 4px 10px ;
    right: 0;
@@ -140,8 +145,8 @@
 }
 .load-more{
     background-color: transparent;
-    border: 1px solid snow;
-    box-shadow: 0px 0px 4px 0px snow;
+    border: 1px solid var(--text-color);
+    box-shadow: 0px 0px 4px 0px var(--text-color);
     border-radius: 25px;
     padding: 15px 30px;
     font-size: 15px;
@@ -167,4 +172,17 @@
 
 .tp-view-history{
     font-size: 1rem ;
+}
+.bi-arrow-repeat::before{
+   -webkit-text-stroke: 0.2px;
+    transition:color 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
+     
+}
+.tp-view-history:hover > .bi-arrow-repeat::before{
+    color: var(--primary-blue) !important;
+    transform: rotate(180deg) !important;
+}
+.tp-view-history:hover > .bi-arrow-repeat{
+   
 }

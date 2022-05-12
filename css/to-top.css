@@ -1,0 +1,36 @@
+
+
+.to_top_btn{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    
+
+    background-color: snow !important;
+    padding:0.7rem 0.6rem;
+    padding-right: 0.8rem;
+    border-radius: 50%;
+    text-align: center;
+    transition-property: "background-color";
+    transition: 0.3s;
+    display: none;
+    box-shadow:  1px 1px 10px 0px var(--primary-blue);
+}
+.to_top_btn i::before{
+    color: var(--primary-blue);
+    
+    font-size: 1.2rem;
+    -webkit-text-stroke: 1px;
+}
+.to_top_btn:hover{
+    background-color: var(--primary-blue) !important;
+    cursor: pointer;
+    
+}
+.to_top_btn:hover > .chevron::before{
+    color: snow !important;
+} 
+.showbtn{
+    display: block;
+}

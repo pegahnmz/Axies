@@ -1,6 +1,6 @@
 
 .footer-container{
-    background-color: #0D0D12;
+    background-color: var(--footer-bg);
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -51,7 +51,8 @@
     appearance: none;
     border: none;
     -webkit-appearance: none;
-    background-color: #343444;
+    /* background-color: #343444; */
+    background-color: #34344444;
     padding: 0.6rem;
     border-radius: 0.2rem;
     transition: all 0.3s ease-in-out;

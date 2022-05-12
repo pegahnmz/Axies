@@ -40,9 +40,9 @@
     font-weight: 600;
 }
 .pc-box{
-    background-color: #343444;
+    background-color: var(--box-bg);
     padding: 20px;
-    
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.368);
     border-radius: 30px;
     position: relative;
 }
@@ -91,10 +91,14 @@
 }
 .pc-header-like{
     background-color:#14141F;
+   color: snow !important;
     height: fit-content;
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
+}
+.pc-header-like > i::before{
+    color: snow !important;
 }
 .pc-header-like--clicked{
     color: red !important;
@@ -143,4 +147,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.bi-check-lg::before{
+    color: snow !important;
+}
+.bi-check::before{
+    color: snow !important;
 }

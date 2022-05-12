@@ -7,7 +7,9 @@
      row-gap: 3rem;
      
 }
-
+.cs-div-icon > a::before{
+    color: snow !important;
+}
 .cs-icon{
    font-size: 1.3rem;
     padding: 0.5rem 0.9rem;

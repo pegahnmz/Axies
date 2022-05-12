@@ -1,16 +1,9 @@
-.tab-container{
-    
-    position: relative;
+.tab-container{  
     input{
-        display: none;
-        &:checked + label{
-            color: rgb(98, 98, 227);
-        }
         @for $i from 1 through 3 {
             &#tab#{$i}:checked{
                 + label::after{
                     opacity: 1;
-                   
                 }
                 ~ .tab-content-container #c#{$i}{
                     opacity: 1 !important;
@@ -18,86 +11,4 @@
             }
         }
     }
-    label{
-        width: 33.333%;
-        position: relative;
-        padding: 0.3rem 0;
-        margin-right: 2rem;
-        transition:all 0.3s ease;
-        cursor: pointer;
-        &::after{
-            content: "";
-            height: 0.07rem;
-            width: 100%;
-            position: absolute;
-            background: rgb(98, 98, 227);
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            
-            transition:all 0.3s ease;
-            z-index: 1;
-        }
-        &:hover::after{
-            
-        }
-    }
-    .tab-line{
-        position: absolute;
-        height: 0.07rem;
-        background: #ccc;
-        width: 100%;
-        left: 0;
-        top: 1.6rem;
-    }
-    .tab-content-container{
-        position: relative;
-        
-        .tab-content{
-            position: absolute;
-            width: 100%;
-            height: 10rem;
-            top: 0;
-            opacity: 0;
-            padding: 1rem 0;
-            
-            transition: all 0.5s ease;
-            
-            
-            .tab-scroll{
-                padding-top: 1rem;
-                height: 10rem;
-                overflow-y: scroll;
-                position: relative;
-                z-index: 2;
-                padding-right: 5rem;
-                &::-webkit-scrollbar{
-                    width: 0.1rem;
-                    
-                    color: snow;
-                }
-                &::-webkit-scrollbar-thumb{
-                   background-color: gray;
-                }
-                &::-webkit-scrollbar-track{
-                    background-color: black;
-                }
-               
-                .scroll-item-line{
-                    background-color: rgba(41, 41, 41, 0.614);
-                    height: 0.01rem;
-                     
-                    margin-bottom: 1rem !important;
-                }
-                .scroll-item{
-                    
-                }
-                
-                
-            }
-        }
-    }
-    
-   
-    
 }

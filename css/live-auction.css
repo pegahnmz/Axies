@@ -1,9 +1,10 @@
 
 /*////////////////////////////////////////////////////*/
 .live-auction{
-    background-color: black;
+    background-color: var(--live-auction-bg);
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+    
 }
 .la-img{
     width: 1rem;
@@ -12,6 +13,7 @@
 }
 .la-time{
     background-color: #3434448f;
+    color: snow !important;
     display: flex;
     align-items: center;
     position: absolute;
@@ -66,12 +68,16 @@
     
     
 }
+.swiper-slide{
+    padding-top: 2rem !important;
+    
+}
 
 
 .swiper-pagination, .swiper-pagination::before, .swiper-pagination::after{
      
     
-    color: snow !important;
+    color: var(--text-color) !important;
     margin-top: 2rem;
    
 }
@@ -79,7 +85,7 @@
    
     opacity: 1;
     border: transparent solid 2px;
-    outline: snow solid 1px;
+    outline:  var(--text-color) solid 1px;
     background-color: transparent;
 }
 .swiper-pagination > .swiper-pagination-bullet-active {
@@ -105,6 +111,6 @@
     
 }
 .swiper-button-next:hover:after, .swiper-button-prev:hover:after{
-    color: rgb(255, 250, 250);
-    border-color:  rgb(255, 250, 250);
+    color:  var(--text-color);
+    border-color:   var(--text-color);
 }

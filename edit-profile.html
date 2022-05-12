@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/item-details.css">
     <link rel="stylesheet" href="./item-details-tab/tab.css">
     <link rel="stylesheet" href="./css/edit profile/edit-profile.css">
+    <link rel="stylesheet" href="./css/to-top.css">
     
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -28,7 +29,7 @@
     <script src="https://kit.fontawesome.com/2ce738c39a.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body class="dark">
     <header >
         <div class="header-container" id="header">
             <div class="logo header-items">
@@ -128,10 +129,10 @@
             </div>
                 
             <div class="header-items">
-                <div class="moon-icon">
+                <div class="moon-icon"  id="dark_mode">
                     <img src="./images/01_header/moon-2.png" alt="#" class="image">
                 </div>
-                <div class="moon-icon">
+                <div class="moon-icon"  id="light_mode">
                     <img src="./images/01_header/sun.png" alt="#" class="image">
                 </div>
                 
@@ -146,7 +147,7 @@
     </div>
 
     <main>
-        
+        <button class="to_top_btn"  id="to_top_btn"><i class="chevron bi-chevron-up"></i></button>
         <section class="EP">
             <div class="edit-profile--main">
                 <div class="EP-main--left">
@@ -278,6 +279,7 @@
     </footer>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/edit-profile.js"></script>
 </body>
 </html>

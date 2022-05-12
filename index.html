@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/live-auction.css">
     <link rel="stylesheet" href="./css/top-seller.css">
     <link rel="stylesheet" href="./css/side-menu.css">
+    <link rel="stylesheet" href="./css/to-top.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +24,7 @@
     
     
 </head>
-<body class="light">
+<body class="dark">
     <header >
         <div class="header-container" id="header">
             <div class="logo header-items">
@@ -119,10 +120,10 @@
             </div>
                 
             <div class="header-items">
-                <div class="moon-icon">
+                <div class="moon-icon" id="dark_mode">
                     <img src="./images/01_header/moon-2.png" alt="#" class="image">
                 </div>
-                <div class="moon-icon">
+                <div class="moon-icon" id="light_mode">
                     <img src="./images/01_header/sun.png" alt="#" class="image">
                 </div>
                 
@@ -131,7 +132,9 @@
         
     </header>
     <main>
-        
+     
+         <button class="to_top_btn"  id="to_top_btn"><i class="chevron bi-chevron-up"></i></button>
+     
      <section class="hero">
         <div class="hero-right">
             <h1 class="hero-h">
@@ -739,7 +742,7 @@
                     </div>
                     <div class="tp-footer">
                         <button class=" tp-footer-btn"><a class="bi-bag"></a> Place Bid</button>
-                        <p class="pc-box-creator tp-view-history"><a class="bi-arrow-repeat"></a> View History</p>
+                        <p class="pc-box-creator tp-view-history"><a class=" bi-arrow-repeat repeat-icon"></a> View History</p>
                     </div>
                 </div>
 
@@ -987,6 +990,7 @@
     
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

@@ -2,19 +2,22 @@
     margin: 3rem 0;
 }
 .img-box{
-    background-color: #343444;
+    /* background-color: #343444; */
+    background-color: var(--box-bg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.368);
     display: flex;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
     gap: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
 }
 .img-box--img{
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
+    box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.174);
     z-index: 0;
     position: relative;
     
@@ -41,16 +44,17 @@
     align-items: center;
     justify-content:center ;
     margin-bottom: 0.5rem;
-    border: 2px solid grey;
+    
+    border: 2px solid transparent;
     border-radius: 0.5rem;
     
     
 }
-.img-cover:nth-child(1){
-    border: 1px solid grey;
+.img-cover:nth-child(2){
+    border: 2px solid grey !important;
 }
 .img-cover--img{
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 .img-cover--img:hover{
     background: linear-gradient(30deg, rgba(140, 0, 255), rgb(107, 3, 107)),linear-gradient(30deg, rgba(140, 0, 255), rgb(107, 3, 107));
@@ -168,11 +172,15 @@
     background-color: rgb(140, 0, 255);
     width: fit-content;
     border-radius: 2rem;
+    
 }
 .div-btn:hover{
     background-color: rgba(140, 0, 255, 0.738);
 }
-
+.div-btn > button > a::before , 
+.div-btn > button{
+    color: snow !important;
+}
 .EP-icon{
     width: 2.2rem;
     height: 2.2rem;
@@ -180,7 +188,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(52, 52, 68);
+    /* background-color: rgb(52, 52, 68); */
+    background-color: var(--moon-icon-bg);
     margin: 0;
     padding: 0;
     margin-left: 0.5rem;
@@ -194,6 +203,7 @@
 }
 .notif-header div{
     position: absolute;
+    color: snow !important;
     background-color: red;
     width: 1rem;
     height: 1rem;
@@ -216,7 +226,8 @@
      font-size: 0.9rem;
      font-weight: 600;
     border-radius: 2rem;
-    background-size: 400% 300%;
+    /* background-size: 400% 300%; */
+    background-size: 600% 500%;
     transition: all 0.3s ease-in-out;
     background-image: linear-gradient(to right,
     transparent, 
@@ -224,11 +235,11 @@
      
      rgba(140, 0, 255, 0.688),
      rgba(150, 23, 196, 0.347));
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.256);
 }
 .EP-btn:hover{
     cursor: pointer;
-    background-position: 100% 0%;
+    background-position: 80% 0%;
     transition: all 0.3s ease-in-out;
     border-color: rgba(150, 23, 196, 0.229);
    /* 
