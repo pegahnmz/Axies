@@ -72,7 +72,12 @@ window.addEventListener("scroll", function(){
 
  
 
-
+const loader = document.querySelector("#loader");
+window.addEventListener('load', function () {
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 3000);
+})
 
 
 
